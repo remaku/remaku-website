@@ -1,0 +1,25 @@
+---
+title: 文件位置
+description: 宏、模板、设置与日志的保存位置。
+icon: Folder
+date: '2026-06-18T09:33:00Z'
+---
+
+import { File, Folder, Files } from 'fumadocs-ui/components/files'
+
+所有宏、模板与设置文件都保存在 `Documents\remaku\`。
+
+<Files>
+  <File name='config.json' />
+  <Folder name='macros' defaultOpen>
+    <File name='&lt;宏_id&gt;.json' />
+  </Folder>
+  <Folder name='templates' defaultOpen>
+    <Folder name='&lt;宏名称&gt;' defaultOpen>
+      <File name='&lt;模板_id&gt;.png' />
+    </Folder>
+  </Folder>
+  <Folder name='logs' defaultOpen>
+    <File name='remaku.log' />
+  </Folder>
+</Files>

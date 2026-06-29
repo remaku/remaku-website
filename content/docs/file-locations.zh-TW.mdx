@@ -1,0 +1,25 @@
+---
+title: 檔案位置
+description: 巨集、模板、設定與紀錄的儲存位置。
+icon: Folder
+date: '2026-06-18T09:33:00Z'
+---
+
+import { File, Folder, Files } from 'fumadocs-ui/components/files'
+
+所有巨集、模板與設定檔都儲存在 `Documents\remaku\`。
+
+<Files>
+  <File name='config.json' />
+  <Folder name='macros' defaultOpen>
+    <File name='&lt;巨集_id&gt;.json' />
+  </Folder>
+  <Folder name='templates' defaultOpen>
+    <Folder name='&lt;巨集名稱&gt;' defaultOpen>
+      <File name='&lt;模板_id&gt;.png' />
+    </Folder>
+  </Folder>
+  <Folder name='logs' defaultOpen>
+    <File name='remaku.log' />
+  </Folder>
+</Files>

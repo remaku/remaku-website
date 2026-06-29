@@ -1,0 +1,123 @@
+---
+title: Contributing
+description: Set up the development environment and learn how to contribute to Remaku.
+icon: GitPullRequest
+date: '2026-06-22T00:00:00Z'
+---
+
+Remaku is open source under AGPL-3.0. Contributions are welcome.
+
+## Prerequisites
+
+- Python 3.12
+- [uv](https://docs.astral.sh/uv/) for package management
+- [nodemon](https://nodemon.io/) (optional, for hot-reload during development)
+
+## Project Structure
+
+```
+remaku/
+  main.py                         # Entry point
+  paths.py                        # File path utilities
+  theme.py                        # Theme management
+  version.py                      # Version info (read from pyproject.toml)
+  controllers/
+    home_controller.py            # Main editor controller
+    main_controller.py            # Application-level controller
+    macro_explorer_controller.py  # Macro Explorer logic
+    settings_controller.py        # Settings page controller
+  core/
+    capture.py                    # Screen capture (BetterCam / DXGI)
+    dialogs.py                    # Native dialog helpers
+    display.py                    # Display and monitor utilities
+    event_bus.py                  # Application-wide event system
+    i18n.py                       # Internationalization
+    keymap.py                     # Virtual key code mapping
+    keys.py                       # Keyboard input simulation (pydirectinput)
+    vision.py                     # OpenCV template matching
+    window.py                     # Windows window management
+  models/
+    config_model.py               # Configuration data model
+    macro_model.py                # Macro data model
+    pack_model.py                 # Macro pack catalog model
+    step_dict.py                  # Step serialization / deserialization
+    step_node.py                  # Step tree node model
+    step_tree.py                  # Step tree manager
+  resources/
+    icon.py                       # SVG icon engine (Lucide)
+    resources.qrc                 # Qt resource file
+    icons/                        # SVG icon files
+    images/                       # Image assets
+    locales/                      # Qt translation files (.ts / .qm)
+  services/
+    clipboard_service.py          # Clipboard operations
+    engine.py                     # JSON macro parsing and execution
+    hotkey_service.py             # Global hotkey registration
+    macro_import_service.py       # Macro import / export (ZIP)
+    macro_recorder.py             # Keyboard and mouse recording
+    macro_runner.py               # Macro execution runner
+    migration.py                  # Legacy data migration
+    pack_service.py               # Pack catalog management
+    template_service.py           # Template file management
+    updater.py                    # Auto-update
+  views/
+    home_view.py                  # Main editor view
+    main_window.py                # Main application window
+    macro_explorer_view.py         # Macro Explorer UI
+    region_selector.py            # Screen region selection
+    settings_view.py              # Settings page UI
+    components/                   # Reusable UI components
+```
+
+## Getting Started
+
+```powershell
+make setup        # Create venv and install dependencies
+make dev          # Run with hot-reload (requires nodemon)
+```
+
+Run `make` to see all available targets.
+
+## Development Commands
+
+| Command             | Description                             |
+| ------------------- | --------------------------------------- |
+| `make setup`        | Create venv and install deps            |
+| `make sync`         | Sync dependencies                       |
+| `make dev`          | Run with hot-reload                     |
+| `make test`         | Run tests with coverage                 |
+| `make lint`         | Run ruff linter                         |
+| `make format`       | Run ruff formatter                      |
+| `make format-check` | Check formatting                        |
+| `make typecheck`    | Run pyright type checker                |
+| `make check-all`    | Run lint, format-check, typecheck, test |
+| `make translate`    | Update and compile translation files    |
+| `make build`        | Build the installer                     |
+| `make clean`        | Remove all build artifacts              |
+
+## Code Style
+
+- Do not use `_` prefix for naming functions or variables.
+- Add a blank line before and after block statements (`if`, `for`, `while`). Do not add one before `elif`/`else`.
+
+## i18n
+
+Wrap user-visible strings in `self.tr()` or `QCoreApplication.translate()`. Run `make translate` to update and compile `.ts` / `.qm` files.
+
+## Testing
+
+Run all tests:
+
+```bash
+make test
+```
+
+Run a single test file:
+
+```bash
+uv run pytest tests/path/to/test_file.py
+```
+
+## Before Submitting
+
+Run `make check-all` and ensure everything passes before opening a pull request.

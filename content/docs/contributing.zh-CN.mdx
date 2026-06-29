@@ -1,0 +1,123 @@
+---
+title: 贡献指南
+description: 设置开发环境并了解如何贡献 Remaku。
+icon: GitPullRequest
+date: '2026-06-22T00:00:00Z'
+---
+
+Remaku 以 AGPL-3.0 协议开源，欢迎贡献。
+
+## 前置需求
+
+- Python 3.12
+- [uv](https://docs.astral.sh/uv/) 包管理工具
+- [nodemon](https://nodemon.io/)（可选，开发时热重载）
+
+## 项目结构
+
+```
+remaku/
+  main.py                         # 入口点
+  paths.py                        # 文件路径工具
+  theme.py                        # 主题管理
+  version.py                      # 版本信息（从 pyproject.toml 读取）
+  controllers/
+    home_controller.py            # 主编辑器控制器
+    main_controller.py            # 应用层控制器
+    macro_explorer_controller.py  # 宏浏览器逻辑
+    settings_controller.py        # 设置页面控制器
+  core/
+    capture.py                    # 画面捕获（BetterCam / DXGI）
+    dialogs.py                    # 原生对话框辅助工具
+    display.py                    # 显示器与屏幕信息工具
+    event_bus.py                  # 全局事件系统
+    i18n.py                       # 多语言
+    keymap.py                     # 虚拟键码映射
+    keys.py                       # 键盘输入模拟（pydirectinput）
+    vision.py                     # OpenCV 模板匹配
+    window.py                     # Windows 窗口管理
+  models/
+    config_model.py               # 设置数据模型
+    macro_model.py                # 宏数据模型
+    pack_model.py                 # 宏包目录模型
+    step_dict.py                  # 步骤序列化／反序列化
+    step_node.py                  # 步骤树节点模型
+    step_tree.py                  # 步骤树管理器
+  resources/
+    icon.py                       # SVG 图标引擎（Lucide）
+    resources.qrc                 # Qt 资源文件
+    icons/                        # SVG 图标文件
+    images/                       # 图片资源
+    locales/                      # Qt 翻译文件（.ts / .qm）
+  services/
+    clipboard_service.py          # 剪贴板操作
+    engine.py                     # JSON 宏解析与执行
+    hotkey_service.py             # 全局热键注册
+    macro_import_service.py       # 宏导入／导出（ZIP）
+    macro_recorder.py             # 键盘与鼠标录制
+    macro_runner.py               # 宏执行器
+    migration.py                  # 旧版数据迁移
+    pack_service.py               # 宏包目录管理
+    template_service.py           # 模板文件管理
+    updater.py                    # 自动更新
+  views/
+    home_view.py                  # 主编辑器视图
+    main_window.py                # 主应用程序窗口
+    macro_explorer_view.py         # 宏浏览器 界面
+    region_selector.py            # 屏幕区域选取
+    settings_view.py              # 设置页面界面
+    components/                   # 可复用 UI 组件
+```
+
+## 快速开始
+
+```powershell
+make setup        # 创建虚拟环境并安装依赖
+make dev          # 热重载运行（需要 nodemon）
+```
+
+运行 `make` 可查看所有可用目标。
+
+## 开发命令
+
+| 命令                | 说明                                |
+| ------------------- | ----------------------------------- |
+| `make setup`        | 创建虚拟环境并安装依赖              |
+| `make sync`         | 同步依赖                            |
+| `make dev`          | 热重载运行                          |
+| `make test`         | 运行测试（含覆盖率报告）            |
+| `make lint`         | 运行 ruff 代码检查                  |
+| `make format`       | 运行 ruff 格式化                    |
+| `make format-check` | 检查格式但不更改                    |
+| `make typecheck`    | 运行 pyright 类型检查               |
+| `make check-all`    | 运行 lint、格式检查、类型检查与测试 |
+| `make translate`    | 更新并编译翻译文件                  |
+| `make build`        | 构建安装程序                        |
+| `make clean`        | 清除所有构建产物与缓存              |
+
+## 代码风格
+
+- 请勿在函数或变量名称前添加 `_` 前缀。
+- 在块语句（`if`、`for`、`while`）前后添加空行，`elif`/`else` 前不加。
+
+## 多语言
+
+用户可见的字符串请用 `self.tr()` 或 `QCoreApplication.translate()` 包装。运行 `make translate` 更新并编译 `.ts` / `.qm` 文件。
+
+## 测试
+
+运行所有测试：
+
+```bash
+make test
+```
+
+运行单个测试文件：
+
+```bash
+uv run pytest tests/path/to/test_file.py
+```
+
+## 提交前检查
+
+提交 Pull Request 前，请运行 `make check-all` 确保全部通过。

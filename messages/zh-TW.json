@@ -1,0 +1,186 @@
+{
+  "site": {
+    "description": "Remaku 是一款免費開源的視覺化巨集工具，適用於 Windows。透過影像辨識、鍵盤和滑鼠操作自動化任何桌面應用程式。"
+  },
+  "notFound": {
+    "title": "找不到頁面",
+    "description": "您尋找的頁面不存在或已被移動。",
+    "backHome": "返回首頁"
+  },
+  "error": {
+    "title": "發生錯誤",
+    "description": "發生了意外錯誤，請再試一次。",
+    "retry": "再試一次"
+  },
+  "download": {
+    "metadata": {
+      "title": "下載",
+      "description": "下載 Remaku for Windows 的最新穩定版，或從版本封存取得舊版本。"
+    },
+    "hero": {
+      "title": "下載 Windows 版 Remaku。",
+      "description": "安裝最新穩定版，或在需要回退時選擇舊版本。"
+    },
+    "latest": {
+      "label": "最新穩定版",
+      "title": "Remaku {version}",
+      "published": "發布於 {date}",
+      "primaryCta": "下載 Windows 版",
+      "releaseNotes": "版本說明"
+    },
+    "fallback": {
+      "title": "暫時無法載入版本資訊。",
+      "description": "下載按鈕仍會連到 GitHub 的最新安裝檔。舊版本列表會在 release 資料恢復載入後重新顯示。"
+    },
+    "details": {
+      "platform": "平台",
+      "platformValue": "Windows",
+      "file": "安裝檔",
+      "source": "來源",
+      "sourceValue": "GitHub"
+    },
+    "versions": {
+      "eyebrow": "版本封存",
+      "title": "舊穩定版",
+      "published": "發布於 {date}",
+      "download": "下載",
+      "releaseNotes": "說明",
+      "empty": "暫時無法顯示舊版本。"
+    }
+  },
+  "wheelspinCalculator": {
+    "title": "CR 計算機 — 每輛 22B 86,000 CR",
+    "label": "你的可用 CR：",
+    "placeholder": "例如 6000000",
+    "canBuy": "你可以購買 {count} 輛車。",
+    "defaultCost": "預設配置（{count} 輛車）花費 {cost} CR。",
+    "warning": "警告：預設 {count} 輛車的配置至少需要 {cost} CR。"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "開源巨集自動化",
+      "h1": "自動化任何遊戲或桌面應用 — 視覺化操作，完全不用寫程式碼。",
+      "primaryCta": "免費下載",
+      "secondaryCta": "閱讀文件",
+      "describeStep": {
+        "key": "按下 {key}",
+        "delay": "等待 {ms} 毫秒",
+        "wait_image": "等待 {template}",
+        "hold_key_until_gone": "按住 {key} 直到 {template} 消失",
+        "text_input": "輸入 {text}",
+        "wait_number": "等待數字 {operator} {value}",
+        "if_number": "如果數字 {operator} {value}",
+        "repeat_until_number": "重複直到數字 {operator} {value}",
+        "repeat": "重複 {count} 次",
+        "if_image": "如果 {template}",
+        "if_any_image": "如果任一圖片匹配",
+        "grid_nav": "網格 {rows} 行",
+        "mouse_click_coord": "{button}鍵點擊 ({x}, {y})",
+        "mouse_click_image": "{button}鍵點擊 {template}",
+        "mouse_move_coord": "移動到 ({x}, {y})",
+        "mouse_move_image": "移動到 {template}",
+        "mouse_scroll": "滾動 {clicks} 格",
+        "button_left": "左",
+        "button_right": "右",
+        "button_middle": "中"
+      }
+    },
+    "mockup": {
+      "toolbar": {
+        "file": "檔案",
+        "edit": "編輯",
+        "help": "說明",
+        "run": "執行",
+        "record": "錄製",
+        "add": "新增",
+        "delete": "刪除",
+        "moveUp": "上移",
+        "moveDown": "下移",
+        "undo": "復原",
+        "redo": "重做"
+      },
+      "macros": {
+        "title": "巨集",
+        "add": "新增",
+        "autoCrafting": "自動製作",
+        "spreadsheet": "試算表"
+      },
+      "properties": {
+        "title": "等待製作就緒",
+        "skip": "跳過",
+        "note": "備註",
+        "notePlaceholder": "為此步驟加入備註",
+        "template": "模板",
+        "templateAlt": "製作就緒模板預覽",
+        "templateName": "製作就緒",
+        "matchMode": "比對模式",
+        "matchModeValue": "快速：灰階",
+        "captureScreen": "擷取畫面"
+      },
+      "status": "就緒"
+    },
+    "intro": {
+      "lead": "刷材料、做裝備、填報表 — 別再日復一日重複相同的點擊了。",
+      "emphasis": "remaku 幫你看著螢幕，自動做出反應。"
+    },
+    "features": {
+      "eyebrow": "為什麼選擇 remaku",
+      "title": "不怕解析度改變、視窗移動、UI 更新的巨集。",
+      "visualEditor": {
+        "title": "視覺化編輯器",
+        "description": "在步驟樹中排列動作來建立巨集。拖放、調整順序 — 不需要腳本、不需要程式碼、不用猜。",
+        "cta": "了解視覺化編輯器"
+      },
+      "imageRecognition": {
+        "title": "圖像辨識",
+        "description": "點擊你看見的畫面，而不是猜測座標。remaku 即時比對螢幕區域，即使畫面元素移動了，巨集依然正常運作。",
+        "cta": "了解圖像辨識",
+        "target": "目標",
+        "matched": "已比對",
+        "confidence": "99% 相符"
+      },
+      "macroRecorder": {
+        "title": "巨集錄製器",
+        "description": "按下錄製然後播放 — remaku 即時捕捉每個按鍵、點擊和影像比對。完全不需要手動輸入步驟。",
+        "cta": "了解巨集錄製器",
+        "recording": "正在錄製巨集",
+        "liveInput": "即時輸入"
+      }
+    },
+    "workflow": {
+      "eyebrow": "如何運作",
+      "title": "三步驟建立你的第一個巨集。",
+      "steps": {
+        "0": "截圖你想讓 remaku 監看的按鈕、圖示或文字。",
+        "1": "在視覺化步驟樹中加入動作 — 點擊、按鍵、等待。",
+        "2": "按下執行，想重複多少次都行。"
+      }
+    },
+    "cta": {
+      "title": "準備好告別重複動作了嗎？",
+      "primaryCta": "免費下載",
+      "secondaryCta": "原始碼"
+    },
+    "footer": {
+      "status": "開源且持續維護中",
+      "navigationLabel": "頁尾導覽",
+      "columns": {
+        "product": "產品",
+        "resources": "文件與資源",
+        "community": "社群",
+        "project": "專案"
+      },
+      "links": {
+        "docs": "文件",
+        "download": "下載",
+        "features": "功能",
+        "imageRecognition": "圖像辨識",
+        "keyboardShortcuts": "鍵盤快捷鍵",
+        "sourceCode": "原始碼",
+        "license": "授權"
+      },
+      "copyright": "© {year} Remaku",
+      "openSource": "開源自動化工具"
+    }
+  }
+}

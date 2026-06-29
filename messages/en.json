@@ -1,0 +1,186 @@
+{
+  "site": {
+    "description": "Remaku is a free, open-source visual macro tool for Windows. Automate any desktop app with image recognition, keyboard and mouse actions"
+  },
+  "notFound": {
+    "title": "Page not found",
+    "description": "The page you're looking for doesn't exist or has been moved.",
+    "backHome": "Back to home"
+  },
+  "error": {
+    "title": "Something went wrong",
+    "description": "An unexpected error occurred. Please try again.",
+    "retry": "Try again"
+  },
+  "download": {
+    "metadata": {
+      "title": "Download",
+      "description": "Download the latest stable version of Remaku for Windows, or get an older release from the version archive."
+    },
+    "hero": {
+      "title": "Get Remaku for Windows.",
+      "description": "Install the latest stable build, or pick an older version if you need to roll back."
+    },
+    "latest": {
+      "label": "Latest stable release",
+      "title": "Remaku {version}",
+      "published": "Published {date}",
+      "primaryCta": "Download for Windows",
+      "releaseNotes": "Release notes"
+    },
+    "fallback": {
+      "title": "Release details are temporarily unavailable.",
+      "description": "The download button still points to GitHub's latest installer. Older versions will reappear after the release list can be loaded."
+    },
+    "details": {
+      "platform": "Platform",
+      "platformValue": "Windows",
+      "file": "Installer",
+      "source": "Source",
+      "sourceValue": "GitHub"
+    },
+    "versions": {
+      "eyebrow": "Version archive",
+      "title": "Older stable versions",
+      "published": "Published {date}",
+      "download": "Download",
+      "releaseNotes": "Notes",
+      "empty": "Older versions are temporarily unavailable."
+    }
+  },
+  "wheelspinCalculator": {
+    "title": "CR Calculator — 86,000 CR per 22B",
+    "label": "Your available CR:",
+    "placeholder": "e.g. 6000000",
+    "canBuy": "You can buy {count} cars.",
+    "defaultCost": "Default config ({count} cars) costs {cost} CR.",
+    "warning": "Warning: You need at least {cost} CR for the default {count}-car setup."
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "Open-source macro automation",
+      "h1": "Automate any game or desktop app — visually, without writing a single line of code.",
+      "primaryCta": "Download Free",
+      "secondaryCta": "Read Docs",
+      "describeStep": {
+        "key": "Press {key}",
+        "delay": "Wait {ms} ms",
+        "wait_image": "Wait for {template}",
+        "hold_key_until_gone": "Hold {key} until {template} gone",
+        "text_input": "Type {text}",
+        "wait_number": "Wait for number {operator} {value}",
+        "if_number": "If number {operator} {value}",
+        "repeat_until_number": "Repeat until number {operator} {value}",
+        "repeat": "Repeat {count} times",
+        "if_image": "If {template}",
+        "if_any_image": "If any image matched",
+        "grid_nav": "Grid {rows} rows",
+        "mouse_click_coord": "{button} click at ({x}, {y})",
+        "mouse_click_image": "{button} click at {template}",
+        "mouse_move_coord": "Move to ({x}, {y})",
+        "mouse_move_image": "Move to {template}",
+        "mouse_scroll": "Scroll {clicks}",
+        "button_left": "Left",
+        "button_right": "Right",
+        "button_middle": "Middle"
+      }
+    },
+    "mockup": {
+      "toolbar": {
+        "file": "File",
+        "edit": "Edit",
+        "help": "Help",
+        "run": "Run",
+        "record": "Record",
+        "add": "Add",
+        "delete": "Delete",
+        "moveUp": "Move up",
+        "moveDown": "Move down",
+        "undo": "Undo",
+        "redo": "Redo"
+      },
+      "macros": {
+        "title": "Macros",
+        "add": "Add",
+        "autoCrafting": "Auto Crafting",
+        "spreadsheet": "Spreadsheet"
+      },
+      "properties": {
+        "title": "Wait for Crafting Ready",
+        "skip": "Skip",
+        "note": "Note",
+        "notePlaceholder": "Add a note for this step",
+        "template": "Template",
+        "templateAlt": "Crafting Ready template preview",
+        "templateName": "Crafting Ready",
+        "matchMode": "Match Mode",
+        "matchModeValue": "Fast: grayscale",
+        "captureScreen": "Capture Screen"
+      },
+      "status": "Ready"
+    },
+    "intro": {
+      "lead": "Farming resources, crafting items, filling spreadsheets — stop doing the same clicks over and over.",
+      "emphasis": "remaku watches your screen, so you don't have to."
+    },
+    "features": {
+      "eyebrow": "Why remaku",
+      "title": "Macros that survive resolution changes, window moves, and UI updates.",
+      "visualEditor": {
+        "title": "Visual editor",
+        "description": "Build macros by arranging steps in a tree. Drag, drop, reorder — no scripts, no code, no guesswork.",
+        "cta": "Learn about the visual editor"
+      },
+      "imageRecognition": {
+        "title": "Image recognition",
+        "description": "Click what you see, not where you guess. remaku matches screen regions in real time so your macros keep working even when things move.",
+        "cta": "Learn about image recognition",
+        "target": "Target",
+        "matched": "Matched",
+        "confidence": "99% match"
+      },
+      "macroRecorder": {
+        "title": "Macro recorder",
+        "description": "Just press record and play — remaku captures every keystroke, click, and image match in real time. No manual step entry needed.",
+        "cta": "Learn about the macro recorder",
+        "recording": "Recording macro",
+        "liveInput": "Live input"
+      }
+    },
+    "workflow": {
+      "eyebrow": "How it works",
+      "title": "Three steps to your first macro.",
+      "steps": {
+        "0": "Screenshot the button, icon, or text you want remaku to watch for.",
+        "1": "Add actions — clicks, keypresses, waits — in a visual step tree.",
+        "2": "Hit run. Repeat as many times as you need."
+      }
+    },
+    "cta": {
+      "title": "Ready to stop clicking?",
+      "primaryCta": "Download Free",
+      "secondaryCta": "Source Code"
+    },
+    "footer": {
+      "status": "Open-source and actively maintained",
+      "navigationLabel": "Footer navigation",
+      "columns": {
+        "product": "Product",
+        "resources": "Docs & Resources",
+        "community": "Community",
+        "project": "Project"
+      },
+      "links": {
+        "docs": "Docs",
+        "download": "Download",
+        "features": "Features",
+        "imageRecognition": "Image recognition",
+        "keyboardShortcuts": "Keyboard shortcuts",
+        "sourceCode": "Source code",
+        "license": "License"
+      },
+      "copyright": "© {year} Remaku",
+      "openSource": "Open-source automation tool"
+    }
+  }
+}

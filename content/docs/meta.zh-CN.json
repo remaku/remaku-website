@@ -1,0 +1,17 @@
+{
+  "title": "文档",
+  "pages": [
+    "index",
+    "features",
+    "step-types",
+    "step-editing",
+    "variables",
+    "image-recognition",
+    "window-management",
+    "settings",
+    "auto-update",
+    "keyboard-shortcuts",
+    "file-locations",
+    "contributing"
+  ]
+}

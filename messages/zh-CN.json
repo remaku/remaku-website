@@ -1,0 +1,186 @@
+{
+  "site": {
+    "description": "Remaku 是一款免费开源的可视化宏工具，适用于 Windows。通过图像识别、键盘和鼠标操作自动化任何桌面应用。"
+  },
+  "notFound": {
+    "title": "找不到页面",
+    "description": "您寻找的页面不存在或已被移动。",
+    "backHome": "返回首页"
+  },
+  "error": {
+    "title": "发生错误",
+    "description": "发生了意外错误，请再试一次。",
+    "retry": "再试一次"
+  },
+  "download": {
+    "metadata": {
+      "title": "下载",
+      "description": "下载 Remaku for Windows 的最新稳定版，或从版本归档获取旧版本。"
+    },
+    "hero": {
+      "title": "下载 Windows 版 Remaku。",
+      "description": "安装最新稳定版，或在需要回退时选择旧版本。"
+    },
+    "latest": {
+      "label": "最新稳定版",
+      "title": "Remaku {version}",
+      "published": "发布于 {date}",
+      "primaryCta": "下载 Windows 版",
+      "releaseNotes": "版本说明"
+    },
+    "fallback": {
+      "title": "暂时无法加载版本信息。",
+      "description": "下载按钮仍会链接到 GitHub 的最新安装包。旧版本列表会在 release 数据恢复加载后重新显示。"
+    },
+    "details": {
+      "platform": "平台",
+      "platformValue": "Windows",
+      "file": "安装包",
+      "source": "来源",
+      "sourceValue": "GitHub"
+    },
+    "versions": {
+      "eyebrow": "版本归档",
+      "title": "旧稳定版",
+      "published": "发布于 {date}",
+      "download": "下载",
+      "releaseNotes": "说明",
+      "empty": "暂时无法显示旧版本。"
+    }
+  },
+  "wheelspinCalculator": {
+    "title": "CR 计算器 — 每辆 22B 86,000 CR",
+    "label": "你的可用 CR：",
+    "placeholder": "例如 6000000",
+    "canBuy": "你可以购买 {count} 辆车。",
+    "defaultCost": "默认配置（{count} 辆车）花费 {cost} CR。",
+    "warning": "警告：默认 {count} 辆车的配置至少需要 {cost} CR。"
+  },
+  "home": {
+    "hero": {
+      "eyebrow": "开源宏自动化",
+      "h1": "自动化任何游戏或桌面应用 — 可视化操作，完全不用写代码。",
+      "primaryCta": "免费下载",
+      "secondaryCta": "阅读文档",
+      "describeStep": {
+        "key": "按下 {key}",
+        "delay": "等待 {ms} 毫秒",
+        "wait_image": "等待 {template}",
+        "hold_key_until_gone": "按住 {key} 直到 {template} 消失",
+        "text_input": "输入 {text}",
+        "wait_number": "等待数字 {operator} {value}",
+        "if_number": "如果数字 {operator} {value}",
+        "repeat_until_number": "重复直到数字 {operator} {value}",
+        "repeat": "重复 {count} 次",
+        "if_image": "如果 {template}",
+        "if_any_image": "如果任一图片匹配",
+        "grid_nav": "网格 {rows} 行",
+        "mouse_click_coord": "{button}键点击 ({x}, {y})",
+        "mouse_click_image": "{button}键点击 {template}",
+        "mouse_move_coord": "移动到 ({x}, {y})",
+        "mouse_move_image": "移动到 {template}",
+        "mouse_scroll": "滚动 {clicks} 格",
+        "button_left": "左",
+        "button_right": "右",
+        "button_middle": "中"
+      }
+    },
+    "mockup": {
+      "toolbar": {
+        "file": "文件",
+        "edit": "编辑",
+        "help": "帮助",
+        "run": "运行",
+        "record": "录制",
+        "add": "添加",
+        "delete": "删除",
+        "moveUp": "上移",
+        "moveDown": "下移",
+        "undo": "撤销",
+        "redo": "重做"
+      },
+      "macros": {
+        "title": "宏",
+        "add": "添加",
+        "autoCrafting": "自动制作",
+        "spreadsheet": "电子表格"
+      },
+      "properties": {
+        "title": "等待制作就绪",
+        "skip": "跳过",
+        "note": "备注",
+        "notePlaceholder": "为此步骤添加备注",
+        "template": "模板",
+        "templateAlt": "制作就绪模板预览",
+        "templateName": "制作就绪",
+        "matchMode": "匹配模式",
+        "matchModeValue": "快速：灰度",
+        "captureScreen": "捕获画面"
+      },
+      "status": "就绪"
+    },
+    "intro": {
+      "lead": "刷材料、做装备、填报表 — 别再日复一日重复相同的点击了。",
+      "emphasis": "remaku 帮你看着屏幕，自动做出响应。"
+    },
+    "features": {
+      "eyebrow": "为什么选择 remaku",
+      "title": "不怕分辨率改变、窗口移动、UI 更新的宏。",
+      "visualEditor": {
+        "title": "可视化编辑器",
+        "description": "在步骤树中排列动作来创建宏。拖放、调整顺序 — 不需要脚本、不需要代码、不用猜。",
+        "cta": "了解可视化编辑器"
+      },
+      "imageRecognition": {
+        "title": "图像识别",
+        "description": "点击你看见的画面，而不是猜测坐标。remaku 实时匹配屏幕区域，即使画面元素移动了，宏依然正常运作。",
+        "cta": "了解图像识别",
+        "target": "目标",
+        "matched": "已匹配",
+        "confidence": "99% 匹配"
+      },
+      "macroRecorder": {
+        "title": "宏录制器",
+        "description": "按下录制然后播放 — remaku 实时捕捉每个按键、点击和图像匹配。完全不需要手动输入步骤。",
+        "cta": "了解宏录制器",
+        "recording": "正在录制宏",
+        "liveInput": "实时输入"
+      }
+    },
+    "workflow": {
+      "eyebrow": "如何运作",
+      "title": "三步骤创建你的第一个宏。",
+      "steps": {
+        "0": "截图你想让 remaku 监视的按钮、图标或文字。",
+        "1": "在可视化步骤树中加入动作 — 点击、按键、等待。",
+        "2": "按下执行，想重复多少次都行。"
+      }
+    },
+    "cta": {
+      "title": "准备好告别重复动作了吗？",
+      "primaryCta": "免费下载",
+      "secondaryCta": "源代码"
+    },
+    "footer": {
+      "status": "开源且持续维护中",
+      "navigationLabel": "页脚导航",
+      "columns": {
+        "product": "产品",
+        "resources": "文档与资源",
+        "community": "社区",
+        "project": "项目"
+      },
+      "links": {
+        "docs": "文档",
+        "download": "下载",
+        "features": "功能",
+        "imageRecognition": "图像识别",
+        "keyboardShortcuts": "键盘快捷键",
+        "sourceCode": "源代码",
+        "license": "许可证"
+      },
+      "copyright": "© {year} Remaku",
+      "openSource": "开源自动化工具"
+    }
+  }
+}

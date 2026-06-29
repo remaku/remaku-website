@@ -1,0 +1,25 @@
+---
+title: File Locations
+description: Where macros, templates, settings, and logs are stored.
+icon: Folder
+date: '2026-06-18T09:33:00Z'
+---
+
+import { File, Folder, Files } from 'fumadocs-ui/components/files'
+
+All macros, templates, and settings are stored under `Documents\remaku\`.
+
+<Files>
+  <File name='config.json' />
+  <Folder name='macros' defaultOpen>
+    <File name='&lt;macro_id&gt;.json' />
+  </Folder>
+  <Folder name='templates' defaultOpen>
+    <Folder name='&lt;macro_name&gt;' defaultOpen>
+      <File name='&lt;template_id&gt;.png' />
+    </Folder>
+  </Folder>
+  <Folder name='logs' defaultOpen>
+    <File name='remaku.log' />
+  </Folder>
+</Files>

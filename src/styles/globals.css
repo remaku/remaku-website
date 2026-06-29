@@ -1,0 +1,76 @@
+@import 'tailwindcss';
+@import 'fumadocs-ui/css/black.css';
+@import 'fumadocs-ui/css/preset.css';
+
+@theme inline {
+  --color-brand: var(--brand);
+  --color-brand-hover: var(--brand-hover);
+  --color-brand-foreground: var(--brand-foreground);
+
+  --color-app-preview-shell: var(--app-preview-shell);
+  --color-app-preview-foreground: var(--app-preview-foreground);
+  --color-app-preview-card: var(--app-preview-card);
+  --color-app-preview-control: var(--app-preview-control);
+  --color-app-preview-button-hover: var(--app-preview-button-hover);
+  --color-app-preview-checkbox: var(--app-preview-checkbox);
+  --color-app-preview-muted: var(--app-preview-muted);
+
+  --font-sans: var(--font-geist-sans), var(--font-noto-sans-tc), var(--font-noto-sans-sc);
+  --font-mono: var(--font-geist-mono);
+
+  --animate-remaku-feature-scan: remaku-feature-scan 3.4s ease-in-out infinite;
+
+  @keyframes remaku-feature-scan {
+    0%,
+    100% {
+      transform: translateX(-398px);
+    }
+
+    50% {
+      transform: translateX(398px);
+    }
+  }
+}
+
+:root {
+  --brand: hsl(17.41 83.55% 54.71%);
+  --brand-hover: hsl(17.41 83.55% 49.71%);
+  --brand-foreground: hsl(0, 0%, 100%);
+  --app-preview-shell: #f3f3f3;
+  --app-preview-foreground: #191919;
+  --app-preview-card: #f6f6f6;
+  --app-preview-control: #ffffff;
+  --app-preview-button-hover: #e6e6e6;
+  --app-preview-checkbox: #f0f0f0;
+  --app-preview-muted: #8a8a8a;
+}
+
+.dark {
+  --brand: hsl(18.9 100% 50.2%);
+  --brand-hover: hsl(18.9 100% 55.2%);
+  --app-preview-shell: #242424;
+  --app-preview-foreground: #f4f4f4;
+  --app-preview-card: #2c2c2c;
+  --app-preview-control: #343434;
+  --app-preview-button-hover: #3a3a3a;
+  --app-preview-checkbox: #303030;
+  --app-preview-muted: #a4a4a4;
+}
+
+html {
+  scrollbar-gutter: stable;
+}
+
+html > body[data-scroll-locked] {
+  margin-right: 0px !important;
+  --removed-body-scroll-bar-size: 0px !important;
+}
+
+@utility no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
